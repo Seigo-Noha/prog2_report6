@@ -96,5 +96,11 @@ public class Blackjack {
         System.out.println("あなたの合計: " + playerTotal);
         System.out.println("ディーラーの合計: " + dealerTotal);
 
+        if (playerTotal > dealerTotal) {
+            System.out.println("あなたの勝ちです");
+        } else {
+            System.out.println("ディーラーの勝ちです");
+        }
+
     }
 }
