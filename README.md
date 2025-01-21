@@ -16,3 +16,9 @@ Meanwhile, the compiled output files will be generated in the `bin` folder by de
 ## Dependency Management
 
 The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+
+# Blackjackドキュメント
+
+このプロジェクトでは、以下のリンクから詳細なJavaDocドキュメントを参照できます：
+
+[JavaDoc: Blackjackの詳細](file:///Users/nohaseigo/prog2/report/report6/app/build/docs/javadoc/jp/ac/uryukyu/ie/e245705/Blackjack.html)
