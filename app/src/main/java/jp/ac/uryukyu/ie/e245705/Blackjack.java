@@ -7,7 +7,9 @@ public class Blackjack {
     private ArrayList<String> playerHand;
     private ArrayList<String> dealerHand;
 
-    // コンストラクタ。ゲームの初期設定を行う。
+    /**
+     * コンストラクタ。ゲームの初期設定を行う。
+     */
     public Blackjack() {
         deck = createDeck();
         Collections.shuffle(deck);
@@ -63,7 +65,9 @@ public class Blackjack {
         return deck;
     }
 
-    // ゲームの状態を表示するメソッド。
+    /**
+     * ゲームの状態を表示するメソッド。
+     */
     public void startGame() {
         playerHand.add(deck.remove(0));
         playerHand.add(deck.remove(0));
@@ -74,13 +78,17 @@ public class Blackjack {
         System.out.println("ディーラーの公開カード: " + dealerHand.get(0));
     }
 
-    // プレイヤーがカードを引くメソッド。
+    /**
+     * プレイヤーがカードを引くメソッド。
+     */
     public void playerDraw() {
         playerHand.add(deck.remove(0));
         System.out.println("あなたの手札: " + playerHand);
     }
 
-    // ディーラーがカードを引くメソッド。
+    /**
+     * ディーラーがカードを引くメソッド。
+     */
     public void dealerDraw() {
         while (calculateHand(dealerHand) < 17) {
             dealerHand.add(deck.remove(0));
@@ -88,7 +96,9 @@ public class Blackjack {
         System.out.println("ディーラーの手札: " + dealerHand);
     }
 
-    // 勝敗を判定するメソッド。
+    /**
+     * 勝敗を判定するメソッド。
+     */
     public void determineWinner() {
         int playerTotal = calculateHand(playerHand);
         int dealerTotal = calculateHand(dealerHand);
