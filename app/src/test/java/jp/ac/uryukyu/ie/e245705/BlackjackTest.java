@@ -12,8 +12,8 @@ public class BlackjackTest {
     public void testCalculateHand() {
         Blackjack game = new Blackjack();
         ArrayList<String> hand = new ArrayList<>();
-        hand.add("ハートA");
-        hand.add("ダイヤ10");
-        assertEquals(21, game.calculateHand(hand), "手札がAと10のとき合計は21");
+        hand.add("ハート6");
+        hand.add("ダイヤJ");
+        assertEquals(21, game.calculateHand(hand), "手札が6とJのとき合計は16");
     }
 }
